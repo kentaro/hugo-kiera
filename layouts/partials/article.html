@@ -2,7 +2,7 @@
 
     <h1>{{ .Title }}</h1>
 
-    {{ if or (not (isset .Params "meta")) (eq .Params "meta" true) }}
+    {{ if or (not (isset .Params "meta")) (eq .Params "meta") }}
         {{ partial "aside" . }}
     {{ end }}
 
